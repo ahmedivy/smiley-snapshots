@@ -53,11 +53,3 @@ class Bot:
             stop=["\n\n\n"]
         )
         return response["choices"][0]["text"].strip().removesuffix("<|im_end|>")
-
-
-def main():
-    bot = Bot()
-    print(bot.get_response("initial commit"))
-    
-    
-main()
